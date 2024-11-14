@@ -12,7 +12,7 @@ plugins {
 fun properties(key: String) = project.findProperty(key).toString()
 
 group = "com.github.hadywalied"
-version = "0.1.1"
+version = "0.1.2"
 
 repositories {
     mavenCentral()
