@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d425c5-a5e9-4a6d-b02a-a586aade9efa" name="Changes" comment="adjust icon, plugin.xml and version">
-      <change afterPath="$PROJECT_DIR$/CODE_OF_CONDUCT.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/screen1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/screen2.png" afterDir="false" />
+    <list default="true" id="66d425c5-a5e9-4a6d-b02a-a586aade9efa" name="Changes" comment="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1">
+      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,6 +139,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\hady\IdeaProjects\zakker\src\main\resources\META-INF" />
       <recent name="C:\Users\hady\IdeaProjects\zakker\src\main\resources\database" />
       <recent name="C:\Users\hady\IdeaProjects\zakker\src\main\resources" />
     </key>
@@ -288,7 +285,7 @@
       <workItem from="1729943843710" duration="3790000" />
       <workItem from="1729974176601" duration="4513000" />
       <workItem from="1730545753431" duration="16308000" />
-      <workItem from="1731603468973" duration="1540000" />
+      <workItem from="1731603468973" duration="2872000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -338,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731106566283</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1">
+      <option name="closed" value="true" />
+      <created>1731605656700</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1731605656700</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,7 +368,8 @@
     <MESSAGE value="adjust base build.yml github action" />
     <MESSAGE value="adjust plugin.xml and version" />
     <MESSAGE value="adjust icon, plugin.xml and version" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjust icon, plugin.xml and version" />
+    <MESSAGE value="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

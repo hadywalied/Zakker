@@ -1,9 +1,15 @@
+import org.jetbrains.changelog.Changelog
+import org.jetbrains.changelog.markdownToHTML
+
 plugins {
     id("java")
     id("org.jetbrains.kotlin.jvm") version "1.9.25"
     id("org.jetbrains.intellij") version "1.17.4"
+    id("org.jetbrains.changelog") version "2.2.0"
     kotlin("plugin.serialization") version "1.9.25"
 }
+
+fun properties(key: String) = project.findProperty(key).toString()
 
 group = "com.github.hadywalied"
 version = "0.1.1"
@@ -55,6 +61,31 @@ tasks {
     patchPluginXml {
         sinceBuild.set("232")
         untilBuild.set("242.*")
+        untilBuild.set("")
+
+        // Extract the <!-- Plugin description --> section from README.md and provide for the plugin's manifest
+        pluginDescription.set(
+            file("README.md").readText().lines().run {
+                val start = "<!-- Plugin description -->"
+                val end = "<!-- Plugin description end -->"
+
+                if (!containsAll(listOf(start, end))) {
+                    throw GradleException("Plugin description section not found in README.md:\n$start ... $end")
+                }
+                subList(indexOf(start) + 1, indexOf(end))
+            }.joinToString("\n")
+                .let { markdownToHTML(it) }
+        )
+
+        // Get the latest available change notes from the changelog file
+        changeNotes.set(provider {
+            with(changelog) {
+                renderItem(
+                    getOrNull(properties("pluginVersion")) ?: getLatest(),
+                    Changelog.OutputType.HTML,
+                )
+            }
+        })
     }
 
     signPlugin {
@@ -64,6 +95,8 @@ tasks {
     }
 
     publishPlugin {
+        dependsOn("batchChangelog", "patchPluginXml")
         token.set(System.getenv("PUBLISH_TOKEN"))
+        channels.set(listOf(properties("pluginVersion").split('-').getOrElse(1) { "default" }.split('.').first()))
     }
 }
