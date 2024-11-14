@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="66d425c5-a5e9-4a6d-b02a-a586aade9efa" name="Changes" comment="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1">
-      <change afterPath="$PROJECT_DIR$/CHANGELOG.md" afterDir="false" />
+    <list default="true" id="66d425c5-a5e9-4a6d-b02a-a586aade9efa" name="Changes" comment="- fix typo">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +38,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="zakker" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="zakker" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="intellij" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -111,6 +115,7 @@
     "Gradle.zakker [instrumentedJar].executor": "Run",
     "Gradle.zakker [jar].executor": "Run",
     "Gradle.zakker [mainClasses].executor": "Run",
+    "Gradle.zakker [patchPluginXml].executor": "Run",
     "Gradle.zakker [publishPlugin].executor": "Run",
     "Gradle.zakker [setupDependencies].executor": "Run",
     "Gradle.zakker [signPlugin].executor": "Run",
@@ -144,7 +149,7 @@
       <recent name="C:\Users\hady\IdeaProjects\zakker\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Run Plugin">
+  <component name="RunManager" selected="Gradle.zakker [patchPluginXml]">
     <configuration name="zakker [assemble]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -189,7 +194,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="zakker [checkKotlinGradlePluginConfigurationErrors]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="zakker [patchPluginXml]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -200,7 +205,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="checkKotlinGradlePluginConfigurationErrors" />
+            <option value="patchPluginXml" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -211,7 +216,7 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="zakker [mainClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="zakker [publishPlugin]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -222,7 +227,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="mainClasses" />
+            <option value="publishPlugin" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -257,11 +262,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.zakker [patchPluginXml]" />
+        <item itemvalue="Gradle.zakker [publishPlugin]" />
         <item itemvalue="Gradle.zakker [buildPlugin]" />
         <item itemvalue="Gradle.zakker [assemble]" />
         <item itemvalue="Gradle.zakker [tasks]" />
-        <item itemvalue="Gradle.zakker [checkKotlinGradlePluginConfigurationErrors]" />
-        <item itemvalue="Gradle.zakker [mainClasses]" />
       </list>
     </recent_temporary>
   </component>
@@ -285,7 +290,7 @@
       <workItem from="1729943843710" duration="3790000" />
       <workItem from="1729974176601" duration="4513000" />
       <workItem from="1730545753431" duration="16308000" />
-      <workItem from="1731603468973" duration="2872000" />
+      <workItem from="1731603468973" duration="3879000" />
     </task>
     <task id="LOCAL-00001" summary="update .gitignore">
       <option name="closed" value="true" />
@@ -343,7 +348,23 @@
       <option name="project" value="LOCAL" />
       <updated>1731605656700</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="- update CHANGELOG.md&#10;- update description">
+      <option name="closed" value="true" />
+      <created>1731625370167</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1731625370167</updated>
+    </task>
+    <task id="LOCAL-00009" summary="- fix typo">
+      <option name="closed" value="true" />
+      <created>1731625659623</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1731625659623</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -369,7 +390,9 @@
     <MESSAGE value="adjust plugin.xml and version" />
     <MESSAGE value="adjust icon, plugin.xml and version" />
     <MESSAGE value="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1" />
-    <option name="LAST_COMMIT_MESSAGE" value="- update the readme, adding code of conduct and LICENSE info.&#10;- bump the version to 0.1.1" />
+    <MESSAGE value="- update CHANGELOG.md&#10;- update description" />
+    <MESSAGE value="- fix typo" />
+    <option name="LAST_COMMIT_MESSAGE" value="- fix typo" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -74,6 +74,7 @@ tasks {
                 }
                 subList(indexOf(start) + 1, indexOf(end))
             }.joinToString("\n")
+                .replace("./src/", "https://raw.githubusercontent.com/hadywalied/Zakker/master/src/")
                 .let { markdownToHTML(it) }
         )
 
